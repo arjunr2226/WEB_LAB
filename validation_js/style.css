@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+html {
+  font-size: 62.5%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem #3e3d3d80;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  box-shadow: #959da533 0px 8px 24px;
+  border-radius: 4px;
+}
+
+.img-box {
+  background-image: url(img.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.form {
+  padding: 3.2rem;
+}
+
+h1 {
+  padding-bottom: 3.2rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  font-size: 2.4rem;
+}
+
+.row {
+  position: relative;
+  display: flex;
+  gap: 2.8rem;
+  margin-bottom: 2.2rem;
+}
+
+.inner-row {
+  display: flex;
+  flex-direction: column;
+}
+
+.gender-row {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: relative;
+}
+
+.phone-row {
+  position: relative;
+}
+
+.gender-box {
+  display: flex;
+  gap: 3.2rem;
+}
+
+label {
+  font-size: 1.6rem;
+}
+
+.textbox {
+  width: 22rem;
+  height: 4.4rem;
+  padding: 1.2rem;
+  border: none;
+  outline: none;
+  box-shadow: #959da533 0px 8px 24px;
+  font-size: 1.6rem;
+  border-radius: 4px;
+}
+
+.text-area {
+  width: 100%;
+  height: 20rem;
+  border: none;
+  outline: none;
+  box-shadow: #959da533 0px 8px 24px;
+}
+
+.btn {
+  border: 1px solid #000;
+  background-color: #fff;
+  padding: 1rem 3.2rem;
+  cursor: pointer;
+  font-size: 2rem;
+  margin: 0 auto;
+  margin-top: 3.2rem;
+  display: flex;
+  justify-content: center;
+  border-radius: 4px;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.msg {
+  color: red;
+  font-size: 1.2rem;
+  margin-top: 0.8rem;
+  visibility: hidden;
+  position: absolute;
+  left: 0;
+  bottom: -20px;
+}
+
+.repass-msg {
+  color: red;
+  font-size: 1.2rem;
+  margin-top: 0.8rem;
+  visibility: hidden;
+  position: absolute;
+  right: 0;
+  bottom: -20px;
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 style="color: #ffa90b">Registration</h1>
+      <form action="index.php" method="POST" class="form">
+        <div class="Box">
+          <div class="">
+            <label for="fname">First Name </label>
+            <input type="text" name="fname" id="fname" class="input" />
+            <span class="err_msg" id="f_err">meesa</span>
+          </div>
+          <div class="">
+            <label for="lname">Last Name </label>
+            <input type="text" name="lname" id="lname" class="input" />
+            <span class="err_msg" id="l_err">fgfd</span>
+          </div>
+        </div>
+
+        <div class="Box">
+          <div class="">
+            <div class="genderBoxOuter">
+              <div class="">
+                <label for="gender">Gender</label>
+              </div>
+              <div class="genderBox">
+                <div class="radioBox">
+                  <input type="radio" name="gender" id="" value="male" />Male
+                </div>
+                <div class="radioBox">
+                  <input
+                    type="radio"
+                    name="gender"
+                    id=""
+                    value="female"
+                  />Female
+                </div>
+                <div class="radioBox">
+                  <input type="radio" name="gender" id="" value="other" />Other
+                </div>
+              </div>
+            </div>
+            <span class="err_msg" id="g_err"></span>
+          </div>
+          <div class="" style="display: flex; flex-direction: column">
+            <label for="dob">Birthday</label>
+            <input type="date" name="dob" id="dob" class="input" />
+            <span class="err_msg" id="b_err"></span>
+          </div>
+        </div>
+        <div class="Box">
+          <div class="">
+            <label for="phone">Phone</label>
+
+            <input type="text" name="phone" id="phone" class="input" />
+            <span class="err_msg" id="p_err"></span>
+          </div>
+          <div class="">
+            <label for="email">Email </label>
+            <input type="text" name="email" id="email" class="input" />
+            <span class="err_msg" id="e_err"></span>
+          </div>
+        </div>
+        <div class="addrsssBox">
+          <p class="heading">address</p>
+          <div class="Box">
+            <div class="">
+              <label for="hname">House Name </label>
+
+              <input type="text" name="hname" id="hname" class="input" />
+              <span class="err_msg" id="h_err"></span>
+            </div>
+            <div class="">
+              <label for="city">City </label>
+              <input type="text" name="city" id="city" class="input" />
+              <span class="err_msg" id="c_err"></span>
+            </div>
+          </div>
+        </div>
+        <div class="Box">
+          <div class="">
+            <label for="state">State </label>
+
+            <input type="text" name="state" id="state" class="input" />
+            <span class="err_msg" id="s_err"></span>
+          </div>
+          <div class="">
+            <label for="pin">Pincode </label>
+            <input type="text" name="pin" id="pin" class="input" />
+            <span class="err_msg" id="pin_err"></span>
+          </div>
+        </div>
+
+        <button type="submit" name="btn" class="btn" id="btn">Submit</button>
+        <a href="show.php">Show Data</a>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

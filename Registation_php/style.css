@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  background-color: #7777773f;
+}
+.container {
+  width: 430px;
+  padding: 32px 48px;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.05), 0 15px 40px rgba(0, 0, 0, 0.2);
+  background-color: rgb(255, 255, 255);
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  /* background: rgb(220, 211, 211); */
+}
+label {
+  display: block;
+}
+
+input {
+  border: none;
+}
+
+.input {
+  width: 196px;
+  height: 28px;
+  border-bottom: 2px solid grey;
+  border-radius: 4px;
+  margin-top: 8px;
+}
+
+.Box {
+  display: flex;
+  gap: 18px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.genderBox {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  justify-content: start;
+  width: 100%;
+  flex-direction: column;
+}
+
+.radioBox {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  width: 100%;
+}
+.genderBoxOuter {
+  display: flex;
+  justify-content: start;
+  gap: 4px;
+}
+
+.heading {
+  font-size: 16px;
+  text-transform: capitalize;
+  text-align: center;
+}
+.btn {
+  height: 42px;
+  width: auto;
+  margin-top: 16px;
+  border: none;
+  background: none;
+  transition: all 0.3s;
+  cursor: pointer;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.07);
+  background-color: #ffa90b;
+}
+.btn:hover {
+  background-color: #f0b23e;
+}
+
+.err_msg {
+  font-size: 12px;
+  color: red;
+  visibility: hidden;
+}

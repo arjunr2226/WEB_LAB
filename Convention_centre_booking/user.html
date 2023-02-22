@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-size: 62.5%;
+        }
+
+        body {
+            font-size: 1.6rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;    
+            font-family: sans-serif;
+            background-image: linear-gradient(45deg, #339696, #0aa51e);
+        }
+        .container {
+            background-color: #fff;
+            padding: 4.8rem;
+            /* height: 36rem;
+            width: 50rem; */
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.8rem;
+        }
+        .row {
+            display: flex;
+            gap: 4rem;
+        }
+
+        input{
+            height: 2.8rem;
+            width: 18rem;
+            padding: 1rem;
+            border: 1px solid #c9c9c9;
+        }
+
+        input:focus{
+            outline: 2px solid #0aa51e;
+        } 
+
+        .form-box {
+            display: flex;
+            flex-direction: column;
+            gap: 3.2rem;
+        }
+
+        h1 {
+            margin-bottom: 3.2rem;
+            background-image: linear-gradient(45deg, #339696, #0aa51e);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 3.2rem;
+        }
+
+        .btn {
+            background: none;
+            border: none;
+            background-image: linear-gradient(45deg, #339696, #0aa51e);
+            padding: 1.2rem;
+            cursor: pointer;
+            color: #fff;
+            margin-top: -19px;
+        }
+        a {
+            display: inline-block;
+            text-decoration: none;
+            background-image: linear-gradient(45deg, #339696, #0aa51e);
+            color: #fff;
+            padding: 12px 5px;
+            border-radius: 4px;
+            margin-top: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>User Registration</h1>
+        <form class="form-box" action="user-insert.php" method="POST">
+            <div class="row">
+                <div class="">
+                    <label for="name">Your Name</label>
+                    <input type="text" name="name" id="name" placeholder="John Smith">
+                </div>
+                <div class="">
+                    <label for="name">Convention Center</label>
+                    <input type="text" name="center" id="center" placeholder="Enter name here">
+                </div>
+            </div>
+           <div class="row">
+            <div class="">
+                <label for="name">Capacity</label>
+                <input type="text" name="capacity" id="capacity" placeholder="eg(25)">
+            </div>
+            <div class="">
+                <label for="name">Occasion Date</label>
+                <input type="date" name="date" id="date" >
+            </div>
+           </div>
+            <div class="row">
+                
+               <div class="" style="width: 100%;">
+                <label for="name">Contact Number</label>
+                <input type="text" name="phone" id="phone" placeholder="XXXXXXXXXX" style="width: 100%; height: 40px;">
+               </div>
+            </div>
+            <button type="submit" name="btn" class="btn" id="btn">SUBMIT</button>
+        </form>
+        <a href="show.php">Show details</a>
+    </div>
+    <script>
+        const name = document.getElementById("name");
+        const capacity = document.getElementById("capacity");
+        const date = document.getElementById("date");
+        const center = document.getElementById("center");
+        const phone = document.getElementById("phone");
+        const btn = document.getElementById("btn");
+
+        btn.addEventListener("click", (e)=> {
+            let flag = false
+            if(!name.value)
+            {
+                flag = true;
+                name.style.border = "1px solid red";
+            }
+            else
+            {
+                name.style.border = "1px solid red";
+            }
+
+            if(!capacity.value)
+            {
+                flag = true;
+                capacity.style.border = "1px solid red";
+            }
+            else
+            {
+                capacity.style.border = "1px solid red";
+            }
+
+            if(!center.value)
+            {
+                flag = true;
+                center.style.border = "1px solid red";
+            }
+            else
+            {
+                center.style.border = "1px solid red";
+            }
+            if(!phone.value)
+            {
+                flag = true;
+                phone.style.border = "1px solid red";
+            }
+            else
+            {
+                phone.style.border = "1px solid red";
+            }
+            if(!date.value)
+            {
+                flag = true;
+                date.style.border = "1px solid red";
+            }
+            else
+            {
+                date.style.border = "1px solid red";
+            }
+
+            if(flag) 
+            {
+                e.preventDefault();
+                alert("Please enter all details");
+            }
+        });
+
+    </script>
+</body>
+</html>

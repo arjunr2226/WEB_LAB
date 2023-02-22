@@ -1,0 +1,101 @@
+html {
+  font-size: 62.5%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-size: 1.8rem;
+}
+
+ul {
+  list-style: none;
+}
+.container {
+  text-align: center;
+  width: 65rem;
+}
+
+.today-month {
+  font-size: 3.2rem;
+  margin-bottom: 1rem;
+}
+
+.date-box {
+  padding: 3.2rem;
+  position: relative;
+  background-color: aquamarine;
+}
+
+.days-box {
+  padding: 1.2rem;
+  background-color: #80ffd479;
+  border-bottom: 1px solid #7fffd4cc;
+}
+
+.dates-box {
+  padding: 1rem;
+  background-color: #80ffd479;
+}
+
+.days {
+  display: flex;
+  justify-content: space-around;
+}
+.dates {
+  margin-top: 1.2rem;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  row-gap: 2rem;
+  height: 30rem;
+}
+
+.dates li {
+  padding-top: 1rem;
+}
+
+.prev {
+  color: rgba(128, 128, 128, 0.759);
+}
+
+.today {
+  background-color: rgb(139, 227, 212);
+}
+
+.btn {
+  background: none;
+  border: none;
+  font-size: 3.2rem;
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 0.4rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  background-color: rgb(242, 255, 127);
+}
+
+.icon-left {
+  position: absolute;
+  left: 6px;
+  top: 32px;
+}
+
+.icon-right {
+  position: absolute;
+  right: 6px;
+  top: 32px;
+}

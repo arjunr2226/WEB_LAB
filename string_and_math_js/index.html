@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Syting</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="border">
+      <div class="info">
+        <h2>Choices</h2>
+        <ol>
+          <li>Length</li>
+          <li>Slice</li>
+          <li>Susbtring</li>
+          <li>Replace</li>
+          <li>ReplaceAll</li>
+          <li>ToUpperCase</li>
+          <li>ToLowerCase</li>
+          <li>StringConCat</li>
+        </ol>
+      </div>
+      <div class="container">
+        <h1>String Operations</h1>
+        <input type="text" id="textbox" placeholder="ENTER STRING" />
+        <input type="text" placeholder="ENTER CHOICE" id="choicebox" />
+        <button type="submit" id="btn">Submit</button>
+        <!-- RESULT SECTION -->
+
+        <!-- SLICE OPERATION -->
+        <input
+          type="text"
+          placeholder="ENTER START VALUE"
+          class="h-slice"
+          id="startbox"
+        />
+        <input
+          type="text"
+          placeholder="ENTER END VALUE"
+          class="h-slice"
+          id="endbox"
+        />
+        <!-- REPLACE -->
+        <input
+          type="text"
+          placeholder="ENTER WHICH CHARACTER"
+          id="replacebox1"
+          class="h-replace"
+        />
+        <input
+          type="text"
+          placeholder="ENTER REPLACE CHARACTER"
+          id="replacebox2"
+          class="h-replace"
+        />
+        <!-- CONCATINATION -->
+        <input
+          type="text"
+          placeholder="ENTER CHARACTER TO CONCATINATE"
+          id="concatbox"
+          class="h-concat"
+          style="font-size: 14px"
+        />
+        <input type="text" id="result" placeholder="RESULT" />
+
+        <button type="button" onClick="window.location.reload()">
+          Reload Page
+        </button>
+      </div>
+    </div>
+
+    <!-- MATH FUNCTION -->
+
+    <div class="container math-container" style="border: 1px solid #000">
+      <h1>Math Operations</h1>
+      <input type="text" id="mathtextbox" placeholder="ENTER NUMBER" />
+      <button type="submit" id="round">ROUND</button>
+      <button type="submit" id="floor">FLOOR</button>
+      <button type="submit" id="ceil">CEIL</button>
+      <button type="submit" id="sqrt">SQRT</button>
+      <button type="submit" id="log">LOG</button>
+      <!-- RESULT SECTION -->
+      <input type="text" id="mathresult" placeholder="RESULT" />
+
+      <button type="button" onClick="window.location.reload()">
+        Reload Page
+      </button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
